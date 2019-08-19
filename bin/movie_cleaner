@@ -16,5 +16,4 @@ OptionParser.new do |opt|
 end.parse!
 
 movie_cleaner = MovieCleaner::Cleaner.new(options.base_path, options.verbose, options.resolutions)
-puts movie_cleaner.sub_par_files
 movie_cleaner.print_rm_commands
