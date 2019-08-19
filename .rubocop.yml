@@ -9,3 +9,4 @@ Layout/EndOfLine:
 Metrics/BlockLength:
   Exclude:
   - 'spec/*.rb'
+  - 'spec/**/*.rb'

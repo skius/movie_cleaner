@@ -1,9 +1,12 @@
+#!/usr/bin/env ruby
 # frozen_string_literal: true
+
+require 'bundler/setup'
 
 require 'optparse'
 require 'ostruct'
 
-require_relative 'lib/movie_cleaner'
+require 'movie_cleaner'
 
 options = OpenStruct.new
 OptionParser.new do |opt|
@@ -14,6 +17,6 @@ OptionParser.new do |opt|
          'The wanted resolutions in order (Default: 1080p,720p') { |o| options.resolutions = o }
 end.parse!
 
-movie_cleaner = MovieCleaner.new(options.base_path, options.verbose, options.resolutions)
+movie_cleaner = MovieCleaner::Cleaner.new(options.base_path, options.verbose, options.resolutions)
 puts movie_cleaner.sub_par_files
 movie_cleaner.print_rm_commands
