@@ -1,3 +1,4 @@
+[![Build Status](https://semaphoreci.com/api/v1/skius/movie-cleaner/branches/develop/badge.svg)](https://semaphoreci.com/skius/movie-cleaner)  
 # MovieCleaner
 Removes media files where there already is a higher resolution
 
