@@ -2,6 +2,5 @@
 
 source 'https://rubygems.org'
 
-gem 'rspec'
-gem 'rubocop'
-gem 'rubocop-rspec'
+# Specify your gem's dependencies in movie_cleaner.gemspec
+gemspec
