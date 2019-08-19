@@ -11,13 +11,13 @@ Gem::Specification.new do |spec|
   spec.email         = ['me@nielssaurer.com']
 
   spec.summary       = 'Removes media files where there already is a higher resolution'
-  spec.homepage      = 'https://github.com/skius/movie-cleaner'
+  spec.homepage      = 'https://github.com/skius/movie_cleaner'
   spec.license       = 'MIT'
 
   spec.metadata['allowed_push_host'] = 'https://rubygems.org'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/skius/movie-cleaner'
+  spec.metadata['source_code_uri'] = 'https://github.com/skius/movie_cleaner'
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

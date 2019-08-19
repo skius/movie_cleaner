@@ -2,10 +2,8 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-
 require 'optparse'
 require 'ostruct'
-
 require 'movie_cleaner'
 
 options = OpenStruct.new
