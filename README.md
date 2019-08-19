@@ -9,7 +9,7 @@ Removes media files where there already is a higher resolution
 
 ## Usage
 
-`./movie_cleaner.rb [options]` 
+`./cmd.rb [options]` 
 
 | option | description | example |
 |-|-| - |
