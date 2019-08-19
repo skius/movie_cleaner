@@ -3,10 +3,6 @@
 require 'movie_cleaner'
 
 RSpec.describe MovieCleaner::Cleaner do
-  it 'has a version number' do
-    expect(MovieCleaner::VERSION).not_to be nil
-  end
-
   describe '#sub_par_files' do
     let(:movie_cleaner) { described_class.new(base_path, false, checked_resolutions) }
     let(:base_path) { '/test/path' }
