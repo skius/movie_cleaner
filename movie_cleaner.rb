@@ -4,11 +4,6 @@ require 'optparse'
 require 'ostruct'
 
 # MovieCleaner prints commands to remove all unwanted movie files in a directory
-# of structure dir/movieA/movieA 720p.mkv
-#                         movieA 1080p.mkv
-#                  movieB/movieB 480p.mkv
-#                         movieB 1080p.mkv
-#                  ...
 class MovieCleaner
   def initialize(base_path, verbose = false, possible_resolutions = nil)
     @base_path = base_path
@@ -42,7 +37,7 @@ class MovieCleaner
     Dir["#{@base_path}/*"].map do |dir|
       [
         File.basename(dir),
-        Dir["#{dir}/*.mkv"].map { |f| File.basename(f) }
+        Dir["#{dir}/*.{mkv,mov,mp4}"].map { |f| File.basename(f) }
       ]
     end
   end
