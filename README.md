@@ -1,6 +1,6 @@
 [![Build Status](https://semaphoreci.com/api/v1/skius/movie-cleaner/branches/develop/badge.svg)](https://semaphoreci.com/skius/movie-cleaner)  
 # MovieCleaner
-Removes media files where there already is a higher resolution
+Removes media files where there already is a higher resolution ([RubyGems](https://rubygems.org/gems/movie_cleaner))
 
 ## Prerequisites
 
